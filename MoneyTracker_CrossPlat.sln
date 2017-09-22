@@ -11,7 +11,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MoneyTracker_CrossPlat", "M
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MoneyTracker_CrossPlat\MoneyTracker_CrossPlat\MoneyTracker_CrossPlat.projitems*{20ad1bc8-d596-4871-9e5d-b1cd777809d5}*SharedItemsImports = 4
 		MoneyTracker_CrossPlat\MoneyTracker_CrossPlat\MoneyTracker_CrossPlat.projitems*{4d45e0d3-0ea3-4e56-9c82-a8837001182a}*SharedItemsImports = 13
+		MoneyTracker_CrossPlat\MoneyTracker_CrossPlat\MoneyTracker_CrossPlat.projitems*{5e2d655f-ea4d-4ee8-8e54-dc630c419105}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
