@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>20ad1bc8-d596-4871-9e5d-b1cd777809d5</ProjectGuid>
+    <ProjectGuid>{20AD1BC8-D596-4871-9E5D-B1CD777809D5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>MoneyTracker_CrossPlat.Droid</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -62,6 +62,9 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
   </ItemGroup>
-      <Import Project="..\MoneyTracker_CrossPlat\MoneyTracker_CrossPlat.projitems" Label="Shared" Condition="Exists('..\MoneyTracker_CrossPlat\MoneyTracker_CrossPlat.projitems')" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Colors.xml" />
+  </ItemGroup>
+  <Import Project="..\MoneyTracker_CrossPlat\MoneyTracker_CrossPlat.projitems" Label="Shared" Condition="Exists('..\MoneyTracker_CrossPlat\MoneyTracker_CrossPlat.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

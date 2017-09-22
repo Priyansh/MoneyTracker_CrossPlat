@@ -41,6 +41,37 @@ namespace MoneyTracker_CrossPlat.Droid
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int clrHeaderBg = 2130968576;
+			
+			// aapt resource value: 0x7f040004
+			public const int clrLightGreen = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int clrLightRed = 2130968581;
+			
+			// aapt resource value: 0x7f040002
+			public const int clrLightWhite = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int clrSplashBackground = 2130968579;
+			
+			// aapt resource value: 0x7f040001
+			public const int clrWhite = 2130968577;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -60,8 +91,20 @@ namespace MoneyTracker_CrossPlat.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int myButton = 2131034112;
+			// aapt resource value: 0x7f060002
+			public const int btnEarned = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public const int btnSpent = 2131099651;
+			
+			// aapt resource value: 0x7f060004
+			public const int listView1 = 2131099652;
+			
+			// aapt resource value: 0x7f060000
+			public const int textView1 = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int txtMoney = 2131099649;
 			
 			static Id()
 			{
@@ -92,11 +135,11 @@ namespace MoneyTracker_CrossPlat.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int app_name = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int hello = 2131034112;
 			
 			static String()
 			{
