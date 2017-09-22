@@ -14,8 +14,25 @@ namespace MoneyTracker_CrossPlat.iOS
     [Register ("ViewController")]
     partial class ViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnEarned { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnSpent { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (btnEarned != null) {
+                btnEarned.Dispose ();
+                btnEarned = null;
+            }
+
+            if (btnSpent != null) {
+                btnSpent.Dispose ();
+                btnSpent = null;
+            }
         }
     }
 }

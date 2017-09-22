@@ -83,7 +83,10 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections/>
+                    <connections>
+                        <outlet property="btnEarned" destination="247" id="name-outlet-247"/>
+                        <outlet property="btnSpent" destination="248" id="name-outlet-248"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
