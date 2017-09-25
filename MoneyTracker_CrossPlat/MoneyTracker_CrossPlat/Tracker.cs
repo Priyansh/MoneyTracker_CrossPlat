@@ -10,12 +10,13 @@ namespace MoneyTracker_CrossPlat
         public List<Movement> lstMovements { get; set; }
         public Tracker()
         {
-
+            lstMovements = new List<Movement>();
         }
 
         public void AddMovement(Movement movement)
         {
             lstMovements.Add(movement);
+            Balance += (movement.Type) ? movement.Amount : -movement.Amount;
         }
     }
 }

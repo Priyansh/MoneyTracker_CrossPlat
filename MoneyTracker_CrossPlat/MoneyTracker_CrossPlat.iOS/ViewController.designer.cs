@@ -22,6 +22,14 @@ namespace MoneyTracker_CrossPlat.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton btnSpent { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblMoneyValue { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txtMoneyValue { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (btnEarned != null) {
@@ -32,6 +40,16 @@ namespace MoneyTracker_CrossPlat.iOS
             if (btnSpent != null) {
                 btnSpent.Dispose ();
                 btnSpent = null;
+            }
+
+            if (lblMoneyValue != null) {
+                lblMoneyValue.Dispose ();
+                lblMoneyValue = null;
+            }
+
+            if (txtMoneyValue != null) {
+                txtMoneyValue.Dispose ();
+                txtMoneyValue = null;
             }
         }
     }

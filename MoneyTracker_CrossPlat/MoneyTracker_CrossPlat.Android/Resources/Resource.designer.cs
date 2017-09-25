@@ -97,14 +97,14 @@ namespace MoneyTracker_CrossPlat.Droid
 			// aapt resource value: 0x7f060003
 			public const int btnSpent = 2131099651;
 			
+			// aapt resource value: 0x7f060000
+			public const int lblMoneyValue = 2131099648;
+			
 			// aapt resource value: 0x7f060004
 			public const int listView1 = 2131099652;
 			
-			// aapt resource value: 0x7f060000
-			public const int textView1 = 2131099648;
-			
 			// aapt resource value: 0x7f060001
-			public const int txtMoney = 2131099649;
+			public const int txtMoneyValue = 2131099649;
 			
 			static Id()
 			{

@@ -8,7 +8,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
+        android:id="@+id/lblMoneyValue"
         android:layout_marginTop="10dp"
         android:textSize="25dp"
         android:gravity="center"
@@ -16,7 +16,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtMoney" />
+        android:id="@+id/txtMoneyValue"
+        android:inputType="numberDecimal" />
     <Button
         android:text="Earned"
         android:layout_width="match_parent"

@@ -6,7 +6,10 @@ namespace MoneyTracker_CrossPlat.iOS
 {
 	public partial class ViewController : UIViewController
 	{
-		public ViewController (IntPtr handle) : base (handle)
+        Tracker tracker;
+        Movement movement;
+
+        public ViewController (IntPtr handle) : base (handle)
 		{
 		}
 
@@ -19,18 +22,30 @@ namespace MoneyTracker_CrossPlat.iOS
             //	var title = string.Format ("{0} clicks!", count++);
             //	Button.SetTitle (title, UIControlState.Normal);
             //};
+
+            tracker = new Tracker();
             btnEarned.TouchUpInside += BtnEarned_TouchUpInside;
             btnSpent.TouchUpInside += BtnSpent_TouchUpInside;
 		}
 
         private void BtnSpent_TouchUpInside(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            movement = new Movement();
+            movement.Amount = float.Parse(txtMoneyValue.Text);
+            movement.Type = false;
+
+            tracker.AddMovement(movement);
+            lblMoneyValue.Text = tracker.Balance.ToString();
         }
 
         private void BtnEarned_TouchUpInside(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            movement = new Movement();
+            movement.Amount = float.Parse(txtMoneyValue.Text);
+            movement.Type = true;
+
+            tracker.AddMovement(movement);
+            lblMoneyValue.Text = tracker.Balance.ToString();
         }
 
         public override void DidReceiveMemoryWarning ()
